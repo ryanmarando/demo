@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="game-view">
+      <table class="game-table">
+        <caption>
+          Rock, Paper, Scissors
+        </caption>
+        <thead>
+          <th>User:</th>
+          <th></th>
+          <th>Computer:</th>
+        </thead>
+        <tbody class="body-elements">
+          <div class="user-side">
+            <tr>
+              <td>
+                <button
+                  type="button"
+                  onclick="choseOutput('rock')"
+                  onmouseover="showUserOutput('rock')"
+                >
+                  <img src="rock.jpg" alt="rock" id="image" />
+                </button>
+                <br />
+              </td>
+              <td></td>
+              <td><img src="rock.jpg" alt="rock" id="image" /></td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  type="button"
+                  onclick="choseOutput('paper')"
+                  onmouseover="showUserOutput('paper')"
+                >
+                  <img src="paper.jpg" alt="paper" id="image" />
+                </button>
+                <br />
+              </td>
+              <td>
+                <div class="output">
+                  <img src="rock.jpg" id="image-output-user" />
+                  <span id="win-or-lose"></span>
+                  <img id="image-output-computer" />
+                </div>
+              </td>
+              <td><img src="paper.jpg" alt="paper" id="image" /></td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  type="button"
+                  onclick="choseOutput('scissors')"
+                  onmouseover="showUserOutput('scissors')"
+                >
+                  <img src="scissors.jpg" alt="scissors" id="image" />
+                </button>
+                <br />
+              </td>
+              <td></td>
+              <td><img src="scissors.jpg" alt="scissors" id="image" /></td>
+            </tr>
+          </div>
+          <tr>
+            <td></td>
+          </tr>
+          <tr></tr>
+        </tbody>
+      </table>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
